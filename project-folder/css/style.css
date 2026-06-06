@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #56a0e6;
+    color: #333;
+}
+
+.dark {
+    background: #1e1e1e;
+    color: rgb(249, 249, 249);
+}
+
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.dark .card {
+    background: #2c2c2c;
+}
+
+button {
+    margin: 5px 0;
+    padding: 8px 12px;
+    border: none;
+    background: #4a6cf7;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+input {
+    padding: 8px;
+    margin: 5px 0;
+    width: 70%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 8px 0;
+}
+
+.done {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
