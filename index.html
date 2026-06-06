@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List Life Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="card center">
+        <h1 id="time"></h1>
+        <p id="date"></p>
+        <h2 id="greeting"></h2>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button onclick="saveName()">Save Name</button>
+        <button onclick="toggleTheme()">Toggle Dark/Light</button>
+    </div>
+
+    <!-- MAIN GRID -->
+    <div class="grid">
+
+        <!-- TIMER -->
+        <div class="card">
+            <h3>Focus Timer</h3>
+            <h1 id="timer">25:00</h1>
+            <button onclick="startTimer()">Start</button>
+            <button onclick="stopTimer()">Stop</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+
+        <!-- TODO LIST -->
+        <div class="card">
+            <h3>Tasks</h3>
+            <input type="text" id="taskInput" placeholder="Add new task">
+            <button onclick="addTask()">Add</button>
+            <ul id="taskList"></ul>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="card">
+            <h3>Quick Links</h3>
+            <input type="text" id="linkName" placeholder="Link name">
+            <input type="text" id="linkURL" placeholder="URL">
+            <button onclick="addLink()">Add Link</button>
+            <div id="linksContainer"></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
